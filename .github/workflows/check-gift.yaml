@@ -1,0 +1,23 @@
+name: Comprobar disponibilidad LCDL
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 1 10,20 * * *
+
+env:
+  CHAT_ID: ${{ secrets.CHAT_ID }}
+  TOKEN_TELEGRAM: ${{ secrets.TOKEN_TELEGRAM }}
+
+jobs:
+  downloadStatus:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js version 18.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 18.x
+    - run: npm install
+    - run: npm start
