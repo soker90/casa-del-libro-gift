@@ -1,0 +1,22 @@
+{
+  "name": "casa-del-libro-gift",
+  "version": "1.0.0",
+  "description": "Scrapper to get gift cards of La casa del libro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soker90/casa-del-libro-gift.git"
+  },
+  "author": "Eduardo Parra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soker90/casa-del-libro-gift/issues"
+  },
+  "homepage": "https://github.com/soker90/casa-del-libro-gift#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
