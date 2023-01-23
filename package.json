@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Scrapper to get gift cards of La casa del libro",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard ./*.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,10 @@
     "url": "https://github.com/soker90/casa-del-libro-gift/issues"
   },
   "homepage": "https://github.com/soker90/casa-del-libro-gift#readme",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12"
+    "playwright-chromium": "^1.29.2"
   }
 }
