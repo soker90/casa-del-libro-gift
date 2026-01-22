@@ -5,7 +5,7 @@ const TOKEN_TELEGRAM = process.env.TOKEN_TELEGRAM
 const bot = new TelegramBot(TOKEN_TELEGRAM)
 const CHAT_ID = process.env.CHAT_ID
 
-const URL = 'https://www.nicequest.com/es/incentive/Tarjeta-Casa-del-Libro-25%E2%82%AC/fc12b821a458dc3c'
+const URL = 'https://www.nicequest.com/es/incentive/Tarjeta-Amazon-100%E2%82%AC/815b7d849953d6d7'
 
 const browser = await chromium.launch({ headless: true })
 
